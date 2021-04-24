@@ -1,3 +1,10 @@
+.body{
+  background-color: lightblue;
+}
+.error{
+  color: #FF0000;
+}
+
 .submitbtn {
   background-color: #4CAF50;
   color: white;

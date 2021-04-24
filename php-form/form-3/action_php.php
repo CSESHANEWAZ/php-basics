@@ -9,7 +9,22 @@
 <body>
     <?php
 
-        echo "WELLCOME";
+        $nameErr = $passwordErr = "";
+
+        function test_input($data){
+            $date = trim($data);
+            $data = htmlentities($data);
+
+            return $data;
+        }
+
+        if($_POST){
+            if(empty($_POST["fname"])){
+                $nameErr = "Name is required";
+            }else{
+                $fname = test_input($_POST["fname"]);
+            }
+        }
     ?>
 </body>
 </html>
